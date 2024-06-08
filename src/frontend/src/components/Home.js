@@ -1,5 +1,7 @@
 import Header from "./Header";
 import logo from "../logo.svg";
+import CourseDetail from "./CourseDetail";
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="container mt-4">
@@ -9,7 +11,7 @@ function Home() {
           <div className="card">
             <a href="#"><img src={logo} className="card-img-top" alt="..." ></img></a>
             <div className="card-body">
-              <h5 className="card-title">Course Title</h5>
+              <h5 className="card-title"><Link to="/detail/1">Course Title</Link></h5>
               <p className="card-text">Course Description</p>
               <a href="#" className="btn btn-primary">Enroll Now</a>
             </div>
