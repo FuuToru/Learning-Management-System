@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
-import MyCourses from "./MyCourses";
-import Sidebar from "./Sidebar";
+import TeacherSidebar from "./TeacherSidebar";
 function TeacherChangePassword(){
     return (
         <div className="container mt-4">
             <div className="row">
                 <aside className="col-md-3 text-start">
-                    <Sidebar/>
+                    <TeacherSidebar/>
 
 
                 </aside>

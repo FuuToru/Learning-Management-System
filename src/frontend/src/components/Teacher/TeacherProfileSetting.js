@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
-import MyCourses from "./MyCourses";
-import Sidebar from "./Sidebar";
-function ProfileSetting(){
+import TeacherSidebar from "./TeacherSidebar";
+function TeacherProfileSetting(){
     return (
         <div className="container mt-4">
             <div className="row">
                 <aside className="col-md-3 text-start">
-                    <Sidebar/>
+                    <TeacherSidebar/>
 
 
                 </aside>
@@ -65,4 +64,4 @@ function ProfileSetting(){
     )
 }
 
-export default ProfileSetting;
+export default TeacherProfileSetting;
