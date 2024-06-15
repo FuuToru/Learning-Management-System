@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-function CourseDetail(){
-    let {course_id} = useParams();
+function CourseDetail() {
+    let { course_id } = useParams();
     return (
         <div className="container mt-3">
             <div className="row">
@@ -25,9 +25,28 @@ function CourseDetail(){
                 </div>
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item">
-                        Introduction <button className="btn btn-sm btn-danger float-end"><i className="bi-youtube"></i></button>
+                        Introduction
+                        <span className="float-end">
+                            <span className="me-5">1 Hour 30 Minutes</span>
+                            <button className="btn btn-sm btn-danger " data-bs-toggle="modal" data-bs-target="#videoModal1"><i className="bi-youtube"></i></button>
+                        </span>
+                        <div class="modal fade" id="videoModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Video 1</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li className="list-group-item">
+                    <li className="list-group-item" >
                         Introduction <button className="btn btn-sm btn-danger float-end"><i className="bi-youtube"></i></button>
                     </li>
                     <li className="list-group-item">
@@ -55,7 +74,7 @@ function CourseDetail(){
                             <h5 className="card-title"><Link to="/detail/1">Course title</Link></h5>
                         </div>
                     </div>
-                    </div>
+                </div>
             </div>
 
         </div>
