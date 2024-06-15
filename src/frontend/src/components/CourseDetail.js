@@ -12,7 +12,7 @@ function CourseDetail(){
                 <div className="col-8 text-start">
                     <h3>Course Title</h3>
                     <p>Using a combination of grid and utility classes, cards can be made horizontal in a mobile-friendly and responsive way.</p>
-                    <p className="fw-bold">Course By: <a href="#">Teacher 1</a></p>
+                    <p className="fw-bold">Course By: <Link to="/teacher-detail/1">Teacher 1</Link></p>
                     <p className="fw-bold">Duration: 3 Hours 30 Minutes</p>
                     <p className="fw-bold">Total Enroll: 456 Students</p>
                     <p className="fw-bold">Rating: 4.5/5</p>
