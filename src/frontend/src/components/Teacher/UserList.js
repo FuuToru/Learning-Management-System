@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
-import Sidebar from "./Sidebar";
+import TeacherSidebar from "./TeacherSidebar";
 
-function RecommendedCourses() {
+function UserList() {
     return (
         <div className="container mt-4">
             <div className="row">
                 <aside className="col-md-3 text-start">
-                    <Sidebar />
+                    <TeacherSidebar />
                 </aside>
                 <section className="col-md-9 text-start">
                     <div className="card">
-                        <h5 className="card-header">Recommended Courses</h5>
+                        <h5 className="card-header">Users List</h5>
                         <div className="card-body">
                             <table className="table table-bordered">
                                 <thead>
@@ -44,4 +44,4 @@ function RecommendedCourses() {
     );
 }
 
-export default RecommendedCourses;
+export default UserList;

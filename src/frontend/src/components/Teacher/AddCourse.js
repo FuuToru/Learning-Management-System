@@ -1,18 +1,17 @@
 import { Link } from "react-router-dom";
-import Sidebar from "./Sidebar";
+import TeacherSidebar from "./TeacherSidebar";
 
-function FavoriteCourses() {
+function AddCourses() {
     return (
         <div className="container mt-4">
             <div className="row">
                 <aside className="col-md-3 text-start">
-                    <Sidebar />
-
+                    <TeacherSidebar />
 
                 </aside>
                 <section className="col-md-9 text-start">
                     <div className="card">
-                        <h5 className="card-header">Favorite Courses</h5>
+                        <h5 className="card-header">Add Course</h5>
                         <div className="card-body">
                             <table className="table table-bordered">
                                 <thead>
@@ -46,4 +45,4 @@ function FavoriteCourses() {
     );
 }
 
-export default FavoriteCourses;
+export default AddCourses;

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import MyCourses from "./MyCourses";
 import TeacherSidebar from "./TeacherSidebar";
 function TeacherDashboard(){
     return (
