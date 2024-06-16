@@ -2,6 +2,7 @@ import Header from "./Header";
 import logo from "../logo.svg";
 import CourseDetail from "./CourseDetail";
 import { Link } from "react-router-dom";
+import AllCourses from "./AllCourses";
 function Home() {
   return (
     <div className="container mt-4">

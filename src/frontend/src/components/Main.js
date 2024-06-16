@@ -5,6 +5,8 @@ import {Routes, Route} from 'react-router-dom';
 import CourseDetail from "./CourseDetail";
 import About from "./About";
 import TeacherDetail from "./TeacherDetail";
+import AllCourses from "./AllCourses";
+
 
 //User
 import Login from "./User/Login";
@@ -52,6 +54,7 @@ function Main() {
           <Route path="/teacher-profile-setting" element={<TeacherProfileSetting/>}/>
           <Route path="/teacher-change-password" element={<TeacherChangePassword/>}/>
           <Route path="/teacher-detail/:teacher-id" element={<TeacherDetail/>}/>
+          <Route path="/all-courses" element={<AllCourses/>}/>
 
 
         </Routes>
