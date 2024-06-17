@@ -9,7 +9,7 @@ function TeacherDetail(){
             <div className="col-8 text-start">
                 <h3>Fuu Toru</h3>
                 <p>Using a combination of grid and utility classes, cards can be made horizontal in a mobile-friendly and responsive way.</p>
-                <p className="fw-bold">Skills: <Link to="/teacher-detail/1">ML</Link>, <Link to="/teacher-detail/1">Deep</Link>, <Link to="/teacher-detail/1">AI</Link> </p> 
+                <p className="fw-bold">Skills: <Link to="/category/ml">ML</Link>, <Link to="/teacher-detail/1">Deep</Link>, <Link to="/teacher-detail/1">AI</Link> </p> 
                 <p className="fw-bold">Recent Course: <Link to="/teacher-detail/1">AI</Link></p>
                 <p className="fw-bold">Rating: 4.5/5</p>
 
