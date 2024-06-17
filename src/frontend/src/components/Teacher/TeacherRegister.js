@@ -21,6 +21,20 @@ function TeacherRegister(){
                                     <label for="inputPassword" className="form-label">Password</label>
                                     <input type="password" className="form-control" id="inputPassword"></input>
                                 </div>
+                                <div className="mb-3">
+                                    <label for="staticEmail" className="form-label">Qualifications</label>
+                                    <input type="text" className="form-control" id="staticEmail"></input>
+                                </div>
+                                <div className="mb-3">
+                                    <label for="staticEmail" className="form-label">Mobile Number</label>
+                                    <input type="number" className="form-control" id="staticEmail"></input>
+                                </div>
+
+                                <div className="mb-3">
+                                    <label for="staticEmail" className="form-label">Skills</label>
+                                    <textarea type="text" className="form-control" id="staticEmail"></textarea>
+                                    <div className="form-text">Php, Python, Javascript</div>
+                                </div>
                                     <button className="btn btn-primary">Register</button>
 
                             </form>
