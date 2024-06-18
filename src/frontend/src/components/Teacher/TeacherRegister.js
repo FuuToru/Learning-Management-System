@@ -5,7 +5,7 @@ function TeacherRegister(){
         document.title="Teacher Register";
     });
     return (
-        <div className="container mt-4">
+        <div className="container mt-4 text-start">
             <div className="row">
                 <div className="col-6 offset-3">
                     <div className="card">
