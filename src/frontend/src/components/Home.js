@@ -3,7 +3,11 @@ import logo from "../logo.svg";
 import CourseDetail from "./CourseDetail";
 import { Link } from "react-router-dom";
 import AllCourses from "./AllCourses";
+import {useEffect} from "react";
 function Home() {
+  useEffect(() =>{
+    document.title="Home";
+  });
   return (
     <div className="container mt-4">
       <h3 className="pb-1 mb-4 text-start">Latest Courses <a to="/categories" className='float-end btn btn-sm btn-dark m-2'>View All Categories<i className="fa-solid fa-arrow-right"></i></a></h3>
