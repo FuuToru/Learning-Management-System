@@ -25,9 +25,6 @@ def teacher_login(request):
     email = request.POST.get('email')
     password = request.POST.get('password')
 
-    if email is None or password is None:
-        return JsonResponse({'bool': False, 'error': 'Email or Password not provided'}, status=400)
-
     try:
         teacher = Teacher.objects.get(email=email)
         if check_password(password, teacher.password):
