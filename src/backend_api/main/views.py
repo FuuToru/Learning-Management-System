@@ -24,12 +24,3 @@ class TeacherDetail(generics.RetrieveUpdateDestroyAPIView):
 def teacher_login(request):
     email = request.POST.get('email')
     password = request.POST.get('password')
-
-    try:
-        teacher = Teacher.objects.get(email=email)
-        if check_password(password, teacher.password):
-            return JsonResponse({'bool': True})
-        else:
-            return JsonResponse({'bool': False, 'error': 'Invalid credentials'})
-    except Teacher.DoesNotExist:
-        return JsonResponse({'bool': False, 'error': 'Invalid credentials'})
